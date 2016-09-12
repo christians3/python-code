@@ -18,7 +18,7 @@
 #
 # Installation : 
 #     
-# 	Create a file named igsh under .aws/ in your home directory 
+# 	Create a file named igauth under .aws/ in your home directory 
 #
 #	Sample contents : 
 #
