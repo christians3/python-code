@@ -98,15 +98,15 @@ def Uploadfile(bucketname, directory, full_file_name, transfer, stat_info, mime_
 					bucketname, 
 					full_file_name_woslash,
 					extra_args={"Metadata":{'backup-date'		: time.ctime(),
-								'meta-ign-u-mode'	: str(stat_info.st_mode),
-								'meta-ign-u-uid'	: str(stat_info.st_uid),
-								'meta-ign-u-gid'	: str(stat_info.st_gid),
-								'meta-ign-c-atime'	: str(stat_info.st_atime),
-								'meta-ign-c-mtime'	: str(stat_info.st_mtime),
-								'meta-ign-c-ctime'	: str(stat_info.st_ctime),
-								'meta-ign-mimetype'	: mime_type,
-								'meta-ign-encode'	: encode_type,
-								'meta-ign-extension'	: extension_name
+								'meta-mode'	: str(stat_info.st_mode),
+								'meta-uid'	: str(stat_info.st_uid),
+								'meta-gid'	: str(stat_info.st_gid),
+								'meta-atime'	: str(stat_info.st_atime),
+								'meta-mtime'	: str(stat_info.st_mtime),
+								'meta-ctime'	: str(stat_info.st_ctime),
+								'meta-mimetype'	: mime_type,
+								'meta-encode'	: encode_type,
+								'meta-extension'	: extension_name
 								}}
 					)
 		
