@@ -271,10 +271,10 @@ def getArgs():
 
 	home_dir = os.getenv('HOME')
 	config = configparser.ConfigParser()
-	config.read([str(home_dir + "/.aws/igsh")])
+	config.read([str(home_dir + "/.aws/igauth")])
 
-	if os.path.isfile(str(home_dir + "/.aws/igsh")) is False: 
-		print("Config file is not found {}".format(str(home_dir + "/.aws/igsh")))
+	if os.path.isfile(str(home_dir + "/.aws/igauth")) is False: 
+		print("Config file is not found {}".format(str(home_dir + "/.aws/igauth")))
 		sys.exit(1)
 
 	env_variables['aws_access_key_id'] = config.get(env_variables['profilename'],'aws_access_key_id')
